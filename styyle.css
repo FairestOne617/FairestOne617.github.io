@@ -1,7 +1,3 @@
-body {
-background:linear-gradient(green,white);
-}
-
-.customborder  {
-border: solid 5px black;
+:root{
+    color-scheme: dark;
 }
