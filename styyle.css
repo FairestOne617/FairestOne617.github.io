@@ -1,8 +1,7 @@
-:root{
-    color-scheme: dark;
+h1 {
+  color: green;
 }
 
-
-H1{
-Color;blue}
-
+body {
+  background-color: lightblue;
+}
