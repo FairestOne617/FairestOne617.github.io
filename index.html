@@ -1,0 +1,57 @@
+<head>
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="u3-final.css">
+    
+</head>
+<body>
+ <div class="bar">
+    <h1>Number Guess Game</h1>
+    <p>Guess a number from 1-100</p>
+ </div>
+ 
+    <div class="ui">  
+      <input type="text" id="pg" placeholder="Enter Guess Here"> 
+    <input type="button" value="Enter Guess" onclick="guess()">
+    <!-- <input type="button" value="show number" onclick="play()" > -->
+    <input type="button" value="Play Again" onclick="reset()">
+    <p id="out">Your guess needs to be ---</p>
+    <H1 id="out1"></H1>
+   
+    <p id="amount"></p>
+    <p id="out2"></p>
+    </div>  
+    <script>
+        let num = Math.floor(Math.random()*100);
+        let amo = 0 ;
+        let gapl = 0 ;
+
+      //  function play(){
+          // out1.innerHTML = num ;}
+       
+          function guess(){
+            let in1 = pg.value;
+            amo=(amo+1);
+            amount.innerHTML = "you've guessed " + amo + " times"; 
+
+         if(in1 == num){
+            out1.innerHTML = "you win" ;
+        }
+        else if (in1 <= num){
+            out.innerHTML = "Your guess needs to be higher";
+        }
+        else if (in1 >= num){
+            out.innerHTML = "Your guess needs to be lower";
+}
+    }
+
+    function reset(){
+        num = Math.floor(Math.random()*100);
+        amo = 0 ; 
+        amount.innerHTML = "";
+        gapl=(gapl + 1);
+        out2.innerHTML= "youve played "+ gapl +" games"
+    }
+
+    </script>
+</body>
+</html
